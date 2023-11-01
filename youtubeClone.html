@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://kit.fontawesome.com/0d0aedc283.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="flex-center">
+        <div class="nav-left flex-center">
+            <button id="menu-icon" class="common-btn"> <i class="fa-solid fa-bars"></i> </button>
+            <img src="images/logoo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-center">
+            <div class="search-box flex-center">
+                <input type="text" placeholder="Search">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                </button>
+            </div>
+            <button class="mic-btn common-btn">
+                <i class="fa-solid fa-microphone" id="mic-icon"></i>
+            </button>
+        </div>
+        <div class="nav-right flex-center">
+            <button class="common-btn btn1"><i class="fa-solid fa-video"></i>
+            </button>
+            <button class="common-btn btn2" id="connect-icon"> <i class="fa-solid fa-house-signal"></i>
+            </button>
+            <button class="common-btn btn2"> <i class="fa-regular fa-bell"></i>
+            </button>
+            <button class="common-btn btn2" id="search-icon">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </button>
+            <img src="images/djimg.jpg" id="user-img">
+        </div>
+    </nav>
+
+    <!-- ------------sidebar-------------------------------------------------------------------------- -->
+    <div class="sidebar">
+        <div class="shortcut-lists">
+            <a href=""><i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </a>
+            <a href=""><i class="fa-solid fa-clapperboard"></i>
+                <p>Shorts</p>
+            </a>
+            <a href=""><i class="fa-solid fa-money-check-dollar"></i>
+                <p id="subscription-p">Subscriprion</p>
+            </a>
+            <hr>
+            <a href=""><i class="fa-solid fa-photo-film"></i>
+                <p id="library-p">Library</p>
+            </a>
+            <a href="" class="hidden-a"><i class="fa-solid fa-clock-rotate-left"></i>
+                <p>History</p>
+            </a>
+            <a href="" class="hidden-a"><i class="fa-regular fa-circle-play"></i>
+                <p>Your Videos</p>
+            </a>
+            <a href="" class="hidden-a"><i class="fa-regular fa-clock"></i>
+                <p>Watch Later</p>
+            </a>
+            <a href="" class="hidden-a"><i class="fa-regular fa-thumbs-up"></i>
+                <p>Liked videos</p>
+            </a>
+            <a href="" class="hidden-a"><i class="fa-solid fa-chevron-down"></i>
+                <p>Show more</p>
+            </a>
+        </div>
+        <hr>
+        <div class="subscription-lists">
+            <h3>Subscriprions</h3>
+            <a href="" class="hidden-a"><img src="images/smimg.jpg">
+                <p>Sandeep Maheswari</p>
+            </a>
+            <a href="" class="hidden-a"><img src="images/tseriesimg.jpg">
+                <p>T-Series</p>
+            </a>
+            <a href="" class="hidden-a"><img src="images/cwhimg.jpg">
+                <p>CodeWithHarry</p>
+            </a>
+            <a href="" class="hidden-a"><img src="images/carryimg.jpg">
+                <p>CarryMinati</p>
+            </a>
+            <a href="" class="hidden-a"><img src="images/getsetimg.jpg">
+                <p>GetsetflySCIENCE</p>
+            </a>
+            <a href="" id="subscription-more" class="hidden-a"><i class="fa-solid fa-chevron-down"></i>
+                <p>Show 12 more</p>
+            </a>
+        </div>
+    </div>
+    <!-- ----------main-container--------------------------------------------------------------------------- -->
+    <div class="main-container">
+        <div class="tag-links">
+            <button class="compass-btn"><i class="fa-regular fa-compass"></i></button>
+            <div class="sepration-line-div"></div>
+            <button class="all-btn" id="tag1">All</button>
+            <button id="tag2">HTML</button>
+            <button id="tag3">Music</button>
+            <button id="tag4">Computer</button>
+            <button id="tag5">Python</button>
+            <button id="tag6">Gaming</button>
+            <button id="tag7">Lectures</button>
+            <button id="tag8">Mixes</button>
+            <button id="tag9">Thoughts</button>
+            <button id="tag10">Soundtracks</button>
+            <button id="tag11">AI</button>
+            <button id="tag12">Sales</button>
+        </div>
+        <div class="grid-container">
+            <!-- ----------1st vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail1muqabla.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/tseriesimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Full Song: Muqabla | Street Dancer 3D | A.R. Rahman...</a>
+                        <a href="">
+                            <p>T-Series</p>
+                        </a>
+                        <a href="">
+                            <p>584M views &bull; 2 years ago</p>
+                        </a>
+                    </div>
+                    <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------2nd vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail2.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/musicimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Bang Bang Title Track Full Video | BANG BANG | Hrithik Roshan...</a>
+                        <a href="">
+                            <p>Zee Music Company</p>
+                        </a>
+                        <a href="">
+                            <p>187M views &bull; 8 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------3rd vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail10webdev.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/webdevimg.jpg">
+                    <div class="vid-info">
+                        <a href="">How to Become Web Designer With Full Information?...</a>
+                        <a href="">
+                            <p>Quick Support</p>
+                        </a>
+                        <a href="">
+                            <p>828K views &bull; 2 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------4th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail3.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/tseriesimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Barbaadiyan (Full Video)| Shiddat |Sunny K,Radhika M |Sachet...</a>
+                        <a href="">
+                            <p>Zee Music Company</p>
+                        </a>
+                        <a href="">
+                            <p>94M views &bull; 1 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------5th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail7sm.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/smimg.jpg">
+                    <div class="vid-info">
+                        <a href="">World's Best Motivational Video Ever By Sandeep Maheshwari...</a>
+                        <a href="">
+                            <p>Sandeep Maheshwari</p>
+                        </a>
+                        <a href="">
+                            <p>64M views &bull; 10 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------6th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail5ai.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/edurekaimg.jpg">
+                    <div class="vid-info">
+                        <a href="">What Is Artificial Intelligence? | Artificial Intelligence (AI) In...</a>
+                        <a href="">
+                            <p>edureka!</p>
+                        </a>
+                        <a href="">
+                            <p>1M views &bull; 3 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------7th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail4ml.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/edurekaimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Machine Learning Full Course - Learn Machine Learning in...</a>
+                        <a href="">
+                            <p>edureka!</p>
+                        </a>
+                        <a href="">
+                            <p>2.5M views &bull; 3 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------8th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail6brothers.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/sonyimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Brothers Anthem Full Video - Akshay Kumar, Sidharth...</a>
+                        <a href="">
+                            <p>Zee Music Company</p>
+                        </a>
+                        <a href="">
+                            <p>137M views &bull; 7 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------9th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail8getset.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/getsetimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Who RULED Earth Before The DINOSAURS?</a>
+                        <a href="">
+                            <p>GetsetflySCIENCE</p>
+                        </a>
+                        <a href="">
+                            <p>2.2M views &bull; 4 months ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+            <!-- ----------10th vid-list----------- -->
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail9comedy.jpg"></a>
+                <div class="flex-center">
+                    <img class="users-img" src="images/moviesimg.jpg">
+                    <div class="vid-info">
+                        <a href="">Best Comedy Scenes | Paresh Rawal, Rajpal, Shakti...</a>
+                        <a href="">
+                            <p>Zee Music Company</p>
+                        </a>
+                        <a href="">
+                            <p>75M views &bull; 5 years ago</p>
+                        </a>
+                    </div>
+                     <div class="threeDots-div"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>

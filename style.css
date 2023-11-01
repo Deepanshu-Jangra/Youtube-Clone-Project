@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.common-btn {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.common-btn:hover {
+    background-color: #eee;
+}
+
+.nav-right #connect-icon, .nav-right #search-icon, .tag-links .compass-btn, .tag-links .sepration-line-div, .flex-center #threeDots{
+    display: none;
+}
+
+nav {
+    padding: 8px 10px 8px 16px;
+    justify-content: space-between;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.nav-left button {
+    font-size: 19px;
+    padding: 9px 12px;
+}
+
+.nav-left .logo {
+    width: 90px;
+    margin-left: 29px;
+    filter: contrast(200%);
+}
+
+.nav-right {
+    padding-right: 18px;
+    gap: 10px;
+}
+
+.nav-right #user-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.nav-right .btn1 {
+    padding: 11px 12px;
+}
+
+.nav-right .btn2 {
+    padding: 11px 13px;
+}
+
+.search-box {
+    border: 1px solid #ccc;
+    padding-left: 14px;
+    border-radius: 40px;
+}
+
+.search-box input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    width: 525px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+.search-box #search-icon {
+    font-size: 17px;
+}
+
+.search-box .search-btn {
+    padding: 11px 22px;
+    border-radius: 0 40px 40px 0;
+    border: 0;
+    outline: 0;
+    background-color: rgb(247, 247, 247);
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-box .search-btn:hover {
+    background-color: #eee;
+}
+
+.nav-middle .mic-btn {
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 11px 15px;
+}
+
+/* -----------------Sidebar--------------------- */
+
+.sidebar {
+    background-color: #fff;
+    width: 19%;
+    padding: 12px;
+
+    max-height: 100vh;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    padding-top: 70px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.shortcut-lists a,
+.subscription-lists a {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    width: 204px;
+    height: 42px;
+    padding: 0 12px;
+    flex-wrap: wrap;
+}
+
+.shortcut-lists a:hover,
+.subscription-lists a:hover {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.shortcut-lists a p,
+.subscription-lists a p {
+    font-size: 14px;
+    color: #222;
+}
+
+.shortcut-lists a:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+.shortcut-lists a i {
+    font-size: 18px;
+}
+
+#library-p {
+    margin-left: -2px;
+}
+
+#subscription-p {
+    margin-left: -1px;
+}
+
+hr {
+    border: 1px solid #eee;
+    color: #555;
+    margin: 12px 0;
+}
+
+.subscription-lists a img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.subscription-lists h3 {
+    font-weight: 300;
+    color: #333;
+    font-size: 16px;
+    margin: 18px 0 8px 12px;
+}
+
+#subscription-more i,
+#subscription-more p {
+    margin-left: 4px;
+}
+
+/* --------------small-sidebar--------------- */
+.small-sidebar {
+    /* width: 72px; */
+    width: 6%;
+    padding: 0 3px;
+    padding-top: 70px;
+}
+
+.small-sidebar .hidden-a,
+.small-sidebar h3,
+hr {
+    display: none;
+}
+
+.small-sidebar a {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 72px;
+    padding: 16px 0 14px 0;
+}
+
+.small-sidebar a p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* -----------tag-links--------- */
+.tag-links {
+    width: 100%;
+    height: 56px;
+    padding: 12px 0;
+    display: flex;
+    gap: 12px;
+}
+
+.tag-links button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 0px 12px;
+    border-radius: 9px;
+    background-color: rgb(243, 243, 243);
+    font-size: 14px;
+    color: #111;
+    transition: .1s ease-in-out;
+}
+
+.tag-links button:hover {
+    background-color: rgb(234, 234, 234);
+    transition: .1s ease-in-out;
+}
+
+.tag-links .all-btn, .tag-links .all-btn:hover{
+    font-size: 14.5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* ----------Main-Container--------------------------------------------------- */
+
+.main-container {
+    padding: 2px 2% 4% 19.5%;
+}
+
+.large-container {
+    padding-left: 7.5%;
+    /* large-container css should be below main-container css if not then toggle click will not work */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 17px;
+    grid-row-gap: 30px;
+}
+
+.vid-list a img {
+    background-color: transparent;
+    width: 100%;
+    /* width: 278px;
+    height: 156px; */
+    border-radius: 12px;
+}
+
+.vid-list .flex-center {
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-center .users-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.vid-info {
+    color: #222;
+    font-size: 12px;
+    padding-right: 20px;
+    line-height: 1.5;
+    letter-spacing: .3px;
+}
+
+.vid-info a:first-child {
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.vid-list .flex-center .threeDots-div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 37px;
+}
+.vid-list:hover #threeDots{
+    display: inline-block;
+}
+
+
+/* ---------------RESPONSIVE------------------------------------------- */
+@media (max-width: 1050px){
+    .nav-right button{
+        display: none;
+    }
+    .nav-middle input{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1110px){
+    .sidebar .shortcut-lists a{
+        width: 54px;
+    }  
+}
+
+@media (max-width: 940px){
+    .sidebar{
+        display: none;
+    }
+    .nav-left #menu-icon{
+        display: none;
+    }
+    .main-container, .large-container{
+        padding-left: 2%;
+    }
+    .nav-left .logo{
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 670px){
+    .nav-middle input{
+        width: 150px;
+    }
+}
+
+@media (max-width: 540px){
+    .nav-middle .search-box, .mic-btn{
+        display: none;
+    }
+    .grid-container{
+        padding-top: 5px;
+    }
+    .nav-right #search-icon, .nav-right #connect-icon{
+        display: block;
+        font-size: 19px;
+    }
+    .nav-right .btn2{
+        display: block;
+        font-size: 21px;
+    }
+    .nav-right {
+        gap: 0px;
+    }
+    .nav-left .logo{
+        margin-left: 5px;
+        width: 105px;
+    }
+
+    .main-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .grid-container .vid-list a img{
+        border-radius: 0;
+    }
+
+    .tag-links button {
+        background-color: rgb(240, 240, 240);
+        border-radius: 16px;
+        border: 1px solid #ccc;
+    }
+    .tag-links button:hover{
+        background-color: #ddd;
+    }
+    .tag-links .all-btn{
+        background-color: #444;
+        border: 0;
+    }
+    .tag-links{
+        padding-left: 2%;
+    }
+    .tag-links .compass-btn{
+        display: block;
+        border: 0;
+        border-radius: 6px;
+    }
+    .tag-links .compass-btn i{
+        font-size: 21px;
+    }
+    .tag-links .sepration-line-div{
+        display: block;
+        border: 1px solid #ddd;
+        height: 33px;
+    }
+
+    .grid-container .vid-list .flex-center {
+        padding-left: 4px;
+    }
+    .vid-list .vid-info{
+        font-size: 14px;
+    }
+    .vid-list .vid-info a:first-child{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .tag-links #tag5, .tag-links #tag6, .tag-links #tag7, .tag-links #tag8, .tag-links #tag9, .tag-links #tag10, .tag-links #tag11, .tag-links #tag12{
+        display: none;
+    }
+}
